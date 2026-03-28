@@ -1,0 +1,20 @@
+[package]
+name = "injectdb"
+description = "A Rust library for detecting SQL injection patterns in input strings. Designed mainly for AI agents."
+version = "0.0.1"
+edition = "2024"
+authors = ["Kanishk Navale <navalekanishk@gmail.com>"]
+
+[lib]
+name = "injectdb"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+pyo3 = { version = "0.28.2", features = ["extension-module"] }
+regex = "1.12.3"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
