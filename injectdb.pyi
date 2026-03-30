@@ -1,4 +1,4 @@
-def check_malicious(query: str) -> bool:
+def is_query_malicious(query: str) -> bool:
     """
     Checks whether the input string contains SQL injection patterns.
 
@@ -10,9 +10,9 @@ def check_malicious(query: str) -> bool:
 
     Example:
         >>> import injectdb
-        >>> injectdb.check_malicious("' OR 1=1 --")
+        >>> injectdb.is_query_malicious("' OR 1=1 --")
         True
-        >>> injectdb.check_malicious("SELECT id FROM users WHERE id = 1")
+        >>> injectdb.is_query_malicious("SELECT id FROM users WHERE id = 1")
         False
     """
     ...
