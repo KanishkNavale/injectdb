@@ -1,4 +1,4 @@
-use injectdb::is_query_malicious;
+use sqlguard::is_query_malicious;
 
 #[cfg(test)]
 mod dataset_tests {

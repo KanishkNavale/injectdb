@@ -1,4 +1,4 @@
-use injectdb::{analyze_query, is_query_malicious};
+use sqlguard::{analyze_query, is_query_malicious};
 
 static SHOULD_BLOCK: &[&str] = &[
     "DELETE FROM users",

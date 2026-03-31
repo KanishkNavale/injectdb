@@ -113,17 +113,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "injectdb"
-version = "0.0.2"
-dependencies = [
- "csv",
- "indicatif",
- "pyo3",
- "rayon",
- "regex",
-]
-
-[[package]]
 name = "itoa"
 version = "1.0.18"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -318,6 +307,17 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn",
+]
+
+[[package]]
+name = "sqlguard"
+version = "0.0.2"
+dependencies = [
+ "csv",
+ "indicatif",
+ "pyo3",
+ "rayon",
+ "regex",
 ]
 
 [[package]]

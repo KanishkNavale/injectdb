@@ -1,18 +1,18 @@
 [package]
-name = "injectdb"
-description = "A Rust library for detecting SQL injection patterns in input strings. Designed for AI agents."
+name = "sqlguard"
+description = "A Rust library with Python bindings for detecting SQL injection patterns in input strings. Built for speed and designed especially for AI agents that process or generate SQL queries."
 version = "0.0.2"
 edition = "2024"
 authors = ["Kanishk Navale <navalekanishk@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/kanishknavale/injectdb"
-homepage = "https://github.com/kanishknavale/injectdb"
+repository = "https://github.com/kanishknavale/sqlguard"
+homepage = "https://github.com/kanishknavale/sqlguard"
 keywords = ["sql", "injection", "security", "detection", "pyo3", "ai-agents"]
 categories = ["cybersecurity", "text-processing"]
 
 [lib]
-name = "injectdb"
+name = "sqlguard"
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]

@@ -104,7 +104,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
           git add Cargo.toml Cargo.lock pyproject.toml uv.lock
-          git commit -m "chore: release $TAG"
+          git commit -m "Tag: $TAG"
           git tag -a "$TAG" -m "Release $TAG"
 
           git push origin main --follow-tags

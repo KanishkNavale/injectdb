@@ -1,9 +1,9 @@
 build:
-	@echo "Compiling injectdb (dev)..."
+	@echo "Compiling sqlguard (dev)..."
 	uv run maturin develop
 
 release:
-	@echo "Compiling injectdb (release)..."
+	@echo "Compiling sqlguard (release)..."
 	uv run maturin build --release
 
 clean:
@@ -11,7 +11,7 @@ clean:
 	cargo clean
 	uv cache clean
 	rm -rf target/ dist/ *.egg-info
-	rm -rf .venv/lib/python3.14/site-packages/injectdb*
+	rm -rf .venv/lib/python3.14/site-packages/sqlguard*
 	find . -type f -name "*.pyc" -delete
 	find . -type d -name "__pycache__" -delete
 
