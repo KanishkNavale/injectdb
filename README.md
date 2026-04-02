@@ -95,7 +95,7 @@ git clone https://github.com/KanishkNavale/sqlhund
 cd sqlhund
 make dev         # set up development environment
 make build       # compile debug build
-make release   # compile optimized release build
+make release     # compile optimized release build
 ```
 
 ## Testing
@@ -108,7 +108,7 @@ make unittest
 
 Run evaluation against the full RbSQLi dataset (download [the dataset](https://data.mendeley.com/datasets/xz4d5zj5yw/3), place it at `tests/data/wild.csv`):
 
-```console
+```shell
 make wildtest
 ```
 
